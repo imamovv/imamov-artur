@@ -17,6 +17,7 @@ const photos = [image1, image2, image3]
 <style scoped>
 .gallery {
   text-align: center;
+  padding: 4rem 2rem 2rem;
 }
 
 .photos {

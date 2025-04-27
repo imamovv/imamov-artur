@@ -3,7 +3,7 @@
     <nav>
       <a href="#program">Программа</a>
       <a href="#location">Место</a>
-      <a href="#gallery">Фотогалерея</a>
+      <a href="#gallery">Фото</a>
       <a href="#rsvp">Ответить</a>
     </nav>
   </header>
@@ -39,7 +39,7 @@ import RSVPForm from './RSVPForm.vue'
 .navbar nav {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.4rem;
 }
 
 .navbar a {
