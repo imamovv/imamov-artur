@@ -6,7 +6,7 @@ import layout from './components/Layout.vue'
 
 <template>
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Приглашение на 60-летие" />
+  <!-- <meta property="og:title" content="Приглашение на 60-летие" />
   <meta
     property="og:description"
     content="Дорогие друзья! Приглашаем вас на торжественное празднование 60-летия. Будет весело и незабываемо!"
@@ -15,6 +15,6 @@ import layout from './components/Layout.vue'
   <meta property="og:url" content="https://yourdomain.com" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Приглашение на 60-летие" />
-  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale" content="ru_RU" /> -->
   <layout></layout>
 </template>
