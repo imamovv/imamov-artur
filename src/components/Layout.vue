@@ -39,7 +39,7 @@ import RSVPForm from './RSVPForm.vue'
 .navbar nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .navbar a {
