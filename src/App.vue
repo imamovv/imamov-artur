@@ -1,7 +1,7 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
-import layout from './components/Layout.vue'
+import MainLayout from './components/MainLayout.vue'
 </script>
 
 <template>
@@ -16,5 +16,5 @@ import layout from './components/Layout.vue'
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Приглашение на 60-летие" />
   <meta property="og:locale" content="ru_RU" /> -->
-  <layout></layout>
+  <MainLayout />
 </template>

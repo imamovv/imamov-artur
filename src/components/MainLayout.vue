@@ -18,11 +18,25 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import HeroSection from './HeroSection.vue'
 import EventProgram from './EventProgram.vue'
 import LocationDetails from './LocationDetails.vue'
 import PhotoGallery from './PhotoGallery.vue'
 import RSVPForm from './RSVPForm.vue'
+
+onMounted(() => {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible')
+        obs.unobserve(entry.target)
+      }
+    })
+  }, { threshold: 0.1 })
+
+  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
+})
 </script>
 
 <style scoped>
@@ -40,6 +54,7 @@ import RSVPForm from './RSVPForm.vue'
   display: flex;
   justify-content: center;
   gap: 0.4rem;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -57,5 +72,12 @@ import RSVPForm from './RSVPForm.vue'
 /* добавляем отступ для всего контента, чтобы не залез под navbar */
 .content {
   padding-top: 80px;
+}
+
+@media (max-width: 600px) {
+  .navbar nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section id="program" class="program">
+  <section id="program" class="program reveal">
     <h2>Программа вечера</h2>
     <ul>
       <li>18:00 — Сбор гостей</li>
@@ -15,6 +15,12 @@
 .program {
   text-align: center;
   padding: 4rem 2rem 2rem;
+}
+
+@media (max-width: 600px) {
+  .program {
+    padding: 2rem 1rem;
+  }
 }
 
 ul {
