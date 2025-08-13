@@ -1,5 +1,5 @@
 <template>
-  <section id="gallery" class="gallery">
+  <section id="gallery" class="gallery reveal">
     <h2>Фотогалерея</h2>
     <div class="photos">
       <img v-for="(photo, index) in photos" :key="index" :src="photo" alt="Фото" />
@@ -38,5 +38,16 @@ const photos = [image1, image2, image3]
 
 .photos img:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    padding: 2rem 1rem;
+  }
+
+  .photos img {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>

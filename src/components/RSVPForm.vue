@@ -1,5 +1,5 @@
 <template>
-  <section id="rsvp" class="rsvp">
+  <section id="rsvp" class="rsvp reveal">
     <h2>Подтвердите участие</h2>
     <form @submit.prevent="submit">
       <input v-model="name" type="text" placeholder="Ваше имя" required />
@@ -24,6 +24,11 @@ const attendance = ref('')
 </script>
 
 <style scoped>
+.rsvp {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -31,9 +36,11 @@ form {
   max-width: 400px;
   margin: 0 auto;
 }
+
 input[type='text'] {
   padding: 0.5rem;
 }
+
 button {
   background-color: #8b0000;
   color: white;
@@ -42,8 +49,20 @@ button {
   cursor: pointer;
   border-radius: 8px;
 }
+
 .attendance {
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .rsvp {
+    padding: 2rem 1rem;
+  }
+
+  .attendance {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 </style>
