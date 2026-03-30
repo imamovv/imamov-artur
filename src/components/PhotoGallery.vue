@@ -1,6 +1,6 @@
 <template>
   <section id="gallery" class="gallery reveal">
-    <h2>Фотогалерея</h2>
+    <h2>Фотогалереяz</h2>
     <div class="photos">
       <img v-for="(photo, index) in photos" :key="index" :src="photo" alt="Фото" />
     </div>
